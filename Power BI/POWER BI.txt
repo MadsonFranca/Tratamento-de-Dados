@@ -1,0 +1,528 @@
+POWER BI
+
+Configurações Importantes
+Guia Arquivo -> Opções e Configurações -> Opções -> funcionalidades de pré-visualização -> todas desmarcadas.
+
+Guia Arquivo -> Opções e Configurações -> Opções -> ficheiro atual: Carregamentos de Dados -> desmarcar "deletar automaticamente atualizações de relações de tabela...."
+
+Guia Arquivo -> Opções e Configurações -> Opções -> ficheiro atual: definições regionais -> Português - Brazil
+
+Importar Dados
+
+
+Excluir Tabela
+Ir para ícone relações -> Clicar na tabela -> botão direito -> excluir tabela
+
+Tratamento de Dados
+1 passo = Importar a informação por meio do Power BI
+2 passo = Abrir o Power Query e editar o nome da Tabela
+3 passo = Ajeitar o seu Cabeçalho na Tabela
+4 passo = Eliminar/Excluir colunas\ linhas vazias, conteúdo inútil
+5 passo = Ordena as colunas. Definir a coluna que ditará a sequencia de todas as outras.
+6 passo = remover linhas em branco. Guia Página Inicial -> Reduzir Linhas -> Remover Linhas em Branco
+7 passo = formatar as colunas
+
+
+Cuidado: Remover Duplicatas. Cada caso é um caso. 
+
+
+Remover uma coluna
+Selecionar coluna -> Botão direito -> excluir coluna 
+
+Arquivos e Pastas
+Preferência é colocar o arquivo de Power BI e arquivo de Excel na mesma pasta 
+
+Excluir uma alteração na Etapas Aplicadas
+Exclua a coluna aplicada que você realizou na tabela e logo em seguida o que tiver de etapa na frente pra dar tudo certo 
+
+-----------------------------------------------------------------
+
+Coluna Condicional
+Guia Adiciona Coluna -> Coluna Condicionado -> Muito parecido com a fórmula SE, mas bem intuitivo
+
+Coluna Personalizada = criar fórmulas com as colunas (somar, diminuir, multiplicar, diminuir ....) 
+
+Obs: primeiro campo -> colocar o nome da nova coluna -> segundo campo -> clicar nas tabelas, colocar as operações e criar a fórmula -> ficar de olho embaixo para ver se ta tudo certo (ta verde)
+
+Coluna Exemplos = formatar uma coluna pra criar uma nova coluna. Escrevendo na coluna exemplo eles encontram um padrão para preencher os dados
+
+Coluna Idade
+Guia Adicionar Coluna -> selecionar a coluna de Data de Nascimento -> Data -> Idade -> Selecionar a Coluna Criada -> ícone Duração -> Total de Anos
+
+Coluna contendo Erros e substitui-los 
+Clicar com o botão direito na coluna -> Substituir erros -> Colocar o texto ou número para substituir os erros
+
+OBS: Sempre verificar no filtro da coluna o conteúdo da coluna
+
+
+Coluna Índice 
+para gerar apenas 1 número para cada registro para fazer ligações futuramente. Ex: SKU, Código
+
+Guia Adicionar Coluna -> Coluna índice
+Sempre colocar ela no ínicio
+
+-----------------------------------------------------------------
+
+Agrupar 
+Definir uma coluna e extrair contagem, soma, média... de determinado tópico. Ex:  Existe cargos dentro de uma empresa e pretendo contar quantos funcionários existe em determinado cargo.
+
+Crie um cópia da tabela com botão direito - Guia Transformar -> Agrupar -> selecionar coluna -> operação
+
+
+Mesclar Consulta
+Acrescenta Tabelas
+Deve existir 2 tabelas com 2 colunas que coincidem para combiná-las e prencher a tabela principal com mais info. A tabela secundária deve ter a coluna que será combinada como 1 coluna na tabela pois essa ferramenta de combinação funciona como PROCV na tabela principal. Ela analiza a coluna e apartir dessa análise colhe todas as colunas a esquerda que serão definidas no final do processo selecionando as colunas necessárias através do filtro. 
+
+Guia Página Inicial -> Combinar consulta -> Você defini se será uma nova ou alterar  a principal tabela mesmo -> a tabela principal que deve receber as colunas deve ser definido como a primeira -> a tabela secundária que irá fornecer os dados deve ser definida logo após -> deve decidir quais são as colunas que coindem -> ok -> irá criar a coluna e através do filtro você deve decidir quais são as colunas que você irá usar.
+
+Acrescentar Consultas
+Acrescenta linhas combinando 2 tabelas. Necessário ter a mesma informações na mesma coluna.
+
+Guia Página Inicial -> Acrescentar consultas -> decidir se será criado uma nova tabela ou alterar a tabela principal (é indicado criar uma nova tabela para preservar as tabelas) -> selecionar as 2 tabelas - ok
+OBS: Para excluir as tabelas é recomendável excluir a nova tabela de acrescenta consultas e só depois as tabela originais
+
+Importar vários arquivos em apenas uma pasta
+Importar a pasta -> transformar dados -> excluir todas as outras colunas desnecessárias (deixe somente o Content e os Nomes dos Arquivos com extesão -> Guia Adicionar Coluna -> Coluna Personalizada -> escrever a seguinte fórmula  = Excel.Workbook((Content)) -> Coluna criada - excluir content -> Clicar no filtro da nova coluna para expandir -> Ir para Coluna Personalizar.Kind e filtrar por Sheet -> deletar todas as colunas desnecessárias (deixar apenas Name e Personalizar.Data) -> Duplicar a tabela -> após duplicar você entra e clica em table para abrir a nova tabela -> mude o nome desta tabela -> continue duplicando a tabela original e apertando o table e modificando o nome no final de cada tabela
+
+Atualizar 
+Guia Página Inicial
+Atualizar
+OBS: Não modificar os arquivos de locais que o Power BI está utilizando. De preferência estejam todos na mesma pasta incluindo o arquivo do Power BI
+
+OBS: Arquivo modificado de pasta/Erro ao atualizar
+Abrir o Power Query -> Página Inicial -> Atualizar Visualização apertando em cada uma tabela -> caso haja erro por mudança de local -> apetar o ícone Configurações de Fonte de Dados -> selecionar o arquivo que esteja errado para alterar o local no ícone Alterar Fonte -> Procurar -> Selecionar o arquivo -> ok -> atualizar novamente -> fechar e aplicar -> atualizar no Power BI
+
+Relacionamento de Tabelas
+O intuito é ter uma tabela como base principal e designar informações detalhadas de uma coluna na base principal em uma nova tabela para destrinchá-la. Portanto evitando conteúdo muito repetitivo na tabela principal e realizando uma tabela especifica sobre o tema e ligando ambas ao através das relações.
+
+Selecionar a coluna de uma base e arrastá-la para outra coluna com dados/conteúdo correspondentes 
+
+Tabela Calendário
+Power Query -> Guia Página Inicial ->Nova Fonte -> Consulta Nula -> Alterar Nome da Tabela -> Fórmula: 
+
+= List.Dates(#date(1900,1,1), Number.From(DateTime.LocalNow())- Number.From(#date(1900,1,1)) ,#duration(1,0,0,0))
+
+-> Guia Transformar -> Para a Tabela (1 ícone) -> Ok -> Alterar nome da coluna e colocar como Data -> Guia Adicionar Coluna -> Ícone Data -> escolher dia, mês, ano ...
+
+Alterar Formatação de Coluna Data no Power BI
+selecionar coluna -> Guia Especial Ferramentas de Coluna -> Formato -> escolha a melhor formato
+
+Chave Primária
+coluna de determinada tabela NÃO pode conter conteúdo repetido 
+Vai largar a coluna na tabela 
+
+Chave Secundária ou Estrangeira
+coluna de determinada tabela pode conter conteúdo repetido 
+Vai arrastar a coluna para outra tabela
+
+
+Janela de Todas as Relações
+Guia Página Inicial -> Gerenciar Relações -> Pode Editar, Excluir, Nova relação..
+
+Relações Indiretas
+criar uma relação entre 3 tabelas (primária, secundária, indireta) que a secundária (aquela que pede caracterização dos dados fornecidos para outra tabela especifica que é a primária) não consegue fazer ligação com a tabela indireta pq não tem coluna com dados que coincidem, porém a tabela primária tem coluna que coincidem. Essas 3 tabelas tem  relações, mas a secundária e a indireta tem relações indiretamente através da tabela primária.
+
+OBS: Faça relações de preferência com colunas códigos pq pode houver erros de português que possam prejudicar a relação 
+
+Base Informações
+são tabelas principais onde cada linha é composta por algo relevante 
+
+Base Caracteristica
+são tabelas que descrevem detalhadamente a tabela principal com conteúdo especifico
+
+Como saber se a minhas relações de tabelas estão certas
+Crie Matrizes -> um tabela colorida -> vai brincando te trazer colunas de tabelas nas "Tabelas Dinâmicas" no Power BI
+
+OBS: Sempre utilizar quando for fazer algo em alguma tabela/gráfica utilizar dados de linha, coluna gráfica... da tabela de caracterização/primária
+
+----------------------------------------------------------------
+
+DAX
+fórmulas usadas entre colunas
+
+Coluna Calculada
+Criar uma coluna com uma fórmula para cada linha criando uma coluna
+
+Medida
+Criar uma conta que você irá ter apenas um único resultado
+
+Criar Coluna Calculada 
+Selcione a tabela -> Clique com o botão direito uma das colunas que você irá utilizar como coluna utilizável na fórmula -> Criar coluna -> Coluna será criada lá no final -> Usar barra de fórmula -> Nome da coluna primeiro " " (espaço) = " " (espaço) (escreva o nome da coluna) (tab para selcionar a tabela) + outro nome de tabela ..... enter no final.
+
+Operadores DAX
++ soma 
+- subtração
+/ divisão
+* multiplicação 
+
+Operadores de Comparação DAX
+= igual
+> maior
+< menor 
+<> diferente
+
+Obs: os sinais de maior ou menor vem primeiro que o igual. Ex: >=
+
+Alternativa para o IF
+nome tabela >x = o resultado virá como True or False
+
+Operadores DAX
+& = concatenar   
+&& = Fórmula E do Excel 
+|| = Fórmula OU do Excel 
+IN = vários critérios para uma única coluna (evita repetição)
+
+& EX: Nome & " " & Sobrenome Resultado: Madson Nathan
+&& EX:HoraExtra>= 8 && DiasUteis>=100 Resultado: True or False
+|| Ex: HoraExtra>= 8 || DiasUteis>=100 Resultado: True or False
+IN EX: NotaCursoSatisfatório IN {7,8,9,10} Resultado: True or False
+
+Obs: Em uma Medida é obrigatóriamente iniciada com uma fórmula enquando a Coluna Calculada não é necessariamente impedido, mas a maioria utiliza primeiro os nomes da coluna e operadores dax
+
+Função Lógica DAX
+IF
+AND
+OR
+
+Obs: macete para ver linhas em branco em coluna de datas no excel power bi. EX: DataDemissão>0"Atual", "Demitido"
+
+Funçã de Texto DAX
+LEFT
+RIGHT 
+SEARCH = irá te darar o número da posição do caracterer
+MID = melhor que a fórmula right
+
+Ex: Mid(Nome completo, SEARCH(" ",Nome Completo),1000)
+
+Fórmula REPLACE = substitui um caractere por outro
+
+Funções de Datas
+YEAR
+MONTH
+WEEK
+DAY
+EOMONTH = descobre qual será o dia do final do mês. Se vai ser 30, 29, 31...
+EOMONTH(data, 0(mês atual) ou +1 ou -1 (mês anterior ou seguinte)
+DATEDIFF = saber a diferença entre datas. Muito utilizado para saber a idade.
+DATEDIF(DataNasc, TODAY(), YEAR() (saber qual medida de dias você deseja)
+
+Função Related
+Temos uma tabela que temos de fazer uma operação, porém para realizar uma operação precisa de 2 coluna: 1 coluna esta nesta tabela enquanto a outra coluna esta em outra tabela. Para realizar a operação utiliza-se a funçao related que puxa/faz referencia da outra coluna de outra tabela para esta tabela.
+RELATED(Nome da coluna)
+
+OBS: Só dá para fazer essa ligação/referência caso as duas tabelas tenham 1 relacionamento 
+
+
+
+Obs: Criar uma coluna -> digitar o nome da coluna -> digite "."month ou year ou day. É necessario que a coluna mencionada tem que estar do tipo data
+Obs: fique atento com o conteúdo que fica na frente da fórmula que você precisa apagar
+
+MEDIDAS
+São apenas um resultado em forma de número
+Ela irá se encaixar apenas no campo valores na hora de criar os Dashboards pois são números
+
+Criando Medida
+Botão direito em qualquer coluna -> Nova Medida
+
+Obs: Evite de criar Medidas Rápidas. Você precisa saber fazer as fórmulas
+
+
+Obs: Procure sempre colocar no campos de Dashbords de tabelas de conteúdo único
+
+Criar uma Nova Tabela para Organizar Medidas
+Página Incial do Power BI -> Inserir Dados -> Não preencha nada -> Dê um nome -> Carregar -> Clique na medida em outra tabela -> Uma guia especial será aberta "Ferramentas de Medida" -> Mude para a tabela que desejar 
+
+Obs: Nas Medidas é necessário ter uma fórmula como Sum, Average.... A excessão é fazer contas com Medidas 
+
+Casas Decimais nos Dashboards
+Selecionar a Medida (com o certinho acionado na caixa da medida) -> Clique 2 vezes rapidamente -> Ajuste as casas decimais na Guia Ferramenta de Medida
+
+Função Count
+Conta os números de uma coluna
+Obs: Só conta números de uma coluna e não texto
+
+Função Counta
+Conta os números sejam eles oq for texto, valores... de uma coluna que está preenchida. Linhas que nao estao preenchidas eles não contam
+
+Função DistinctCount 
+Conta os números textos valores ... diferentes de uma coluna 
+
+Função CountRows
+Conta as linha de uma coluna
+
+Função Calculate
+É uma função com condição tipo If mas sendo utilizada em Medidas
+
+Sintaxe
+Calculate( Expressão (qual é a operação. vc pode colocar outras fórmulas aqui) ; Filtros 1 (Condições) ...)
+
+Ex: Atual Salario Total (Nome da Medida) = CALCULATE(SUM(BaseFuncionário[SalarioTotal]);BaseFuncionarios[Personalizado]="Funcionário Atual")
+                                                     Expressão para operação da Fórmula	   Condições da Operação
+                                                      [TotalSalario] posso usar Medidas no Campo Expressão também
+
+
+Obs: No campo expressão voce pode colocar uma medida mas nas condições vc não pode colocar medidas
+
+OBS: O que aparece no seu filtro de Calculate se sobrepõe oq estão nas linhas e colunas de Tabelas criadas no Dashboard. 
+
+Função All
+Valor absoluto que não altera em caso de filtro em tabelas no dashboards. 
+Obs: Lembre-se os filtro da função calculate sempre se sobre põe na tabelas 
+Obs: Usamos o All junto ao Calculate no lugar dos Filtros
+
+Ex: VALOR TOTAL CONTRATOS = CALCULATE([Total Valor de Contratos]; ALL([BaseClientes]))
+caps lock medida constante              Medida                    Base toda que está extraindo os dados
+
+Obs: Nome de Medidas Constantes (medidas que não mudam que levam o All junta fórmula) devem estar em letras maiúsculas para melhor visualização e organização das medidas
+Obs: Na argumentação da função All deve colocar o nome da Tabelas Inteira onde está extraindo a informação para a fórmula
+
+Função Filter
+permiti colocar uma medida no filtro diferente do calculate
+Obs: Usa-se a função Filter dentro da função Calculate na parte de filtros 
+
+Ex: Fat. High Tickets = Calculate([total de valor de contrato]; Filter(BaseClientes;BaseClientes[Valor de Serviço]>[VALOR MEDIO P/CONTRATO])))
+     nome da medida                                                  nome da base dados    nome da coluna                 medida 
+
+Funções iterativas
+fórmulas que tem x no final 
+essas funções criará uma coluna "invisivel" na tabela que no final você pode somar, fazer média, ver máximo depedendo da função antes do x
+é como se fosse uma função de somar, subrair, média, máxima ... com condição 
+ela só irá criar uma nova coluna invisivel que auxiliará para fazer ter o resultado desejado 
+
+Ex: Total de Beneficios = SUMX(BaseFuncionarios;BaseFuncionários[Beneficios]+BaseFuncionários[VT]+BaseFuncionários[VR])
+     nome da medida    operação  nome da base    condição ou condições
+
+DASHBORDS
+
+Imagens
+Guia Inserir -> Imagem 
+
+Caixa de Texto
+Guia Inserir -> Caixa de Texto
+Obs: Aparecerá uma janela para edição do texto 
+
+Formas 
+Guia Inserir -> Formas 
+
+Obs: Para edição das formas haverá janela no canto a direita sendo a segunda a frente da janela Campos -> explore
+
+Gráficos de Barras e Colunas
+Estão na primeira linha das Vizualizações
+Há 3 tipos: 
+Empilhadas (apenas uma barra/coluna em caso de mais inserção de dados)
+Clusterizadas (colocará mais graficos em caso de inserção de dados)
+100% Empilhadas (apenas um gráfico mas com dados em porcentagem)
+
+
+Obs: Sempre preenchendo o campo valor primeiro
+
+Eixo: nomes para cada barra 
+Dicas de Ferrmentas: vizualmente não aparecerá nada no grafico, mas quando voce passa o mouse no gráfico voce irá ver os dados que voce inseriu nesse campo
+
+Rótulo de Dados
+2 janela (acionando o rolo) -> Rotulos de Dados ou Etiqueta -> Ativar
+Obs: Pode confeccionar na opção logo abaixo
+
+Formatação Condicional (cores na barra ou coluna)
+2 janela (rolo acionado) -> Cor Padrão 3 pontinhos ao lado -> Formatação Condicional -> Escolher uma coluna -> manusear a cor caso deseje -> ok
+
+Dica: escolha uma formatação condicional com uma coluna que seja mesma no campo Dicas de Ferramentas para fazer sentido ter uma ligação  
+
+Gráfico de Linha e Área
+2° fileira primeiro ícone e segundo ícone
+sempre comece pelo campo de valores 
+Usar as setas no gráfico para escolher as opções de data 
+
+Usar a legenda nesses gráficos não vale muito a pena
+Campo  Descrições = não aparece necessariamente no gráfico mas quando passa o mouse aparece a informação
+
+Gráfico Combinações: Linha + Coluna
+2° fileira 4° opção (da esquerda para direita)
+
+Filtros
+filtrar conteúdo dentro de um gráfico
+
+1° jeito: clicando em uma coluna (ou qualquer conteúdo)
+2° jeito: campos filtros dentro da janela de vizualizações 
+os filtros modificam através da seleção do grafico
+os filtros só funcionaram para o gráfico selecionado. 
+clicar na borracha para tirar todos os filtros
+
+
+Obs: so fica vigente em uma aba. Em caso de trocar de aba o filtro desaparece
+
+Formatação Condicional e de Números
+crie uma matriz -> icone rolo -> Coluna Especifica/Elementos Especifico (formatação condicional) -> explorar opções (icone F)
+
+
+Obs: Pra deixar o maio valor primeiro na coluna voce deve dar um clique no cabeçalho da coluna
+
+Tabela Dinâmica através das Matrizes
+Opcional: coloque mais de uma coluna no mesmo campo (a ordem vai decretar a importância)
+          utilizar as setas lá em cima pra ir filtrando as informações na matriz
+
+Botão de Filtro - Segmentação de Dados
+antepenúltima linha 1° ícone da esquerda para direita
+
+clicar no ícone de segmentação de dados -> levar uma coluna que será como filtro até o campo 
+
+Obs: explore o rolo para confeccionar a segmentação de dados
+
+Selecionar varios opções ao mesmo tempo 
+segmentação de dados selecionada -> rolo -> Seleção -> desmarcar a opção do meio Seleção múltipla..
+
+Linha do Tempo Segmentação de Dados
+segmentação de dados -> coluna de data -> arrasta a bolinha até chegar a data especifica
+
+Segmentação de Dados para todo relatório ou para especifico aba
+selecionar relatório -> Guia Ver -> acionar caixinha Seg. de dados sincronizar -> abrirá uma janela ao lado da de Vizualizações -> selecione a abas desejadas
+Obs: na segunda coluna daquela janela tem o icone olho e isso quer dizer que a segmentação de dados ficará visivel em todas as abas
+
+Cartão e Cartão Múltiplo
+penúltima linha 3° e 4° ícone da esquerda para direita
+serve para mostrar números grandes, evidenciar números
+
+Cartão Multiplos 
+permite que vocÊ coloquer dois no cartão
+
+Obs: Utilize os Filtros junto com os Cartões 
+
+Grafico de Pizza
+3 linha 3 ícone da esquerda para direita
+campo valores primeiro 
+campo legenda para colocar outra coluna para repartir a pizza
+
+Dica: Aumentar o texto e percentual no gráfico
+rolo -> etiquetas -> categoria e  percentual do valor -> aumentar o valor do texto 
+
+Gráfico de Rosca 
+icone ao lado da pizza
+mesma configurações
+
+Gráfico Treemap
+icone ao lado da rosca
+são quadrados em suas devidas proporção em relação ao numeros dela uma do lado da outra
+utilizada para comparação de muitas opções 
+Obs: busque nas etiquetas e tente colocar números aumentar texto ..
+
+Mapa
+penultima linha 1° icone
+
+Obrigatório: Ter uma planilha com os CEPs, para importar e fazer relação com a coluna que você irá fazer o mapa
+Obs: Precisa está conectado a internet
+
+Formatar Conteúdo Coluna
+Guia Modelação -> Categoria de Dados -> texto que contem cidade vc coloca distrito e assim por diante vai selecionando a coluna e alterando 
+
+Dica: Utilize apenas o campo localização para inserir coluna de região/estado
+
+Aparecer números no mapa
+coluna que deve aparecer os números dados no campo Dicas de Ferramentas
+
+Editar Relações
+Tabela relações 3° no canto esquerdo -> gerir relações -> selecionar o nome da tabela -> editar -> cardinalidade -> de muitos para um 
+Obs: isso em caso de lihas traçadas, de 1 um para 1 na relação lá 
+
+Manuseio do Mapa (Zoom)
+scrool do mouse para dar zoom
+
+Gráfico de Mapa
+icone de um globo 
+bolinhas grandes e pequenas 
+
+gráfico de pizza no gráfico de mapa icone globo
+pegar alguma coluna e levar para o campo legenda
+
+Obs: Segmentação de Dados combina muito com os Gráficos de Mapa
+
+KPI E FORMULAS DE INTELIGENCIA DE TEMPO
+
+Comparar Dados Temporais 
+Ex= Faturamento de 2017 com faturamento de 2018 e percentual do aumento ou diminuicao 
+
+Criando Base Calendario com DAX
+Formula=
+CALENDARAUTO()
+Obs E melhor fazer de outra forma la no power query mesmo
+
+Obs= para fazer uma comparacao entre ano e mes de cada perido (janeiro de 18 x janeiro de 19) voce precisa ter uma coluna com mes e ano de conteudo
+Formula=
+Inicio do Mes = StartOfMonth(Calendario[Date])
+Formatar=
+Guia Modelagem -> Formatar -> mes e ano 
+
+Criando Relacao 
+Data de Venda ate Date
+
+Criando Novas Tabelas no Power BI
+Guia Modelagem -> Nova Tabela
+
+DATEADD
+Ex: faturamento no mesmo mas no ano anterior para fazer a comparação com outros anos
+Faturamento=
+Faturamento do Mesmo Mês no Ano Anterior = CALCULATE(SUM[BaseVendas[Valor Perdidos]);DATEADD(Calendario[Date];-1;Year))
+    nome da medida                           formula     faturamento total        formula de tempo coluna     num  periodo que deve retroceder
+
+Obs: as duas medidas devem estar no campo valor
+
+Formula de Percentual de Crescimento
+Formula=
+% Crescimento = ([Faturamento Total de Vendas]-[Faturamento do mesmo Mês no Ano Anterior])/[Faturamento do mesmo Mes no Ano Anterior]
+Formatação=
+selecionar medida -> clique duas vezes -> mude para percentual ajeite as casas decimais
+
+
+Obs: sempre procure realizar fazer uma medida em vez de arratar uma coluna para o gráfico
+
+Comparação com Mês Anterior do mesmo Ano
+Faturamento Month -1 = Calculate(SUM(BaseVendas[Valor Pedido]);DATEADD(Calendario[Date]);-1;MONTH))
+
+
+% de Crescimento Mes Anterior = ([Faturamento Total]-[Faturamento Month -1])/[Faturamento Month -1)
+
+KPI (INDICADOR)
+4 linha 1 da direita 
+
+Campo Eixo da Tendencia = Data 
+Campo Meta de Destino = comparacao com outro meses colocando uma medida que deve servir como meta 
+
+DATEYSYTD
+Calculo do faturamento acumulado (YTD)
+
+Faturamento Acumulado = CALCULATE(SUM(BaseVendas[Valor Perdido]),DATESYTD(Calendario[Date]))
+
+Formatacao Condicional com Faturamento Acumulado 
+selecionar grafico -> pincel -> Elementos da Celula -> escolher a coluna de faturamento acumulado -> Barras de Dados acionar
+
+
+Publicar Dashboard
+Obter Email Corporativo -> Guia Pagina Incial -> Publicar -> Power BI online -> grafico postado online 
+
+Compartilhar Dashboard
+
+
+power bi online -> na aba File -> Publish to web -> create -> ok -> gerar link -> mandar o link para algumem 
+
+---------------------------------------------------------------------------------------------------
+FILTROS
+
+Filtro Visual:
+Filtro Página: 
+Filtro Relatório:
+
+ - Básica:
+ - Avançada: 
+ - Nivel Superior: Lista de Top a partir do campos que voce colocar embaixo
+
+---------------------------------------------------------------------------------------------------
+LUPA
+
+Barras de Erro: utilizado pra mostrar margem de erro (tipo de eleição). Interessante criar gráficos de Linha -> Lupa -> arrastar campos para superior e inferior (decide a qtde de margem de erro) -> mudar o trem para Relativo
+
+Obs: O campo "Dica de Ferramenta" é a parte de quando passamos o mouse no mapa aparece as informações. Explore as opções
+
+Linha Constante: Criar linha de meta -> Criar gráfico (de preferencia linha) -> Lupa -> várias opções de linha de meta, previsão... explore bastante
+
+
+
+

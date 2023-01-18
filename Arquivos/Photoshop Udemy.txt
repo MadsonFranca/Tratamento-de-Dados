@@ -1,0 +1,159 @@
+PHOTOSHOP
+
+INTERFACE
+É Divida Em 5 Partes:
+- Barra de Ferramentas: Ícones no canto esquerdo 
+- Área de Trabalho: Onde fica a imagem
+- Painéis Laterais: Onde fica as camadas e as cores em cima dela 
+- Barras de Contre: São as ferramentas que mudam conforme pode ser selecionados algum ícone da barra de ferramentas.
+- Menus Superiores: Onde fica as guias de arquivo, editar, camada, tipo, selecionar...
+
+CONFIGURAR LAYOUT 
+Existe uma marcação no photoshop (dois símbolos de play) que você pode arrastar na tela e deixar como desejar
+
+OBS: Votar layout de fábrica é so apertar no símbolo de seta para baixo no meio entre dois ícones e abaixo do minimizar, fechar.. -> Redefinir Essenciais 
+
+Menu Janela 
+painél de configuração na tela ou desativar uma dessas painéis padrões 
+
+Photoshop Definição
+Editor de Pixels
+
+Diferença entre ABRIR e INSERIR
+ABRIR: Guia Arquivo -> Abrir
+irá abrir imagens/projetos que cada um terá uma aba 
+INSERIR: Guia Arquivo -> Inserir
+ele não abrirá um novo projeto e sim abrirá a imagem no projeto já existente criando apenas uma camada.
+
+Obs: Para fazer alguma alteração manualmente como se tivesse inserido a imagem. Clicar na 1 opção na Barra de Ferramentas -> Clicar na caixinha de "Mostrar Contr. Transf." -> Clicar na imagem.
+
+Deslocar Projetos 
+Só arrastar o nome da janela -> Quando fica azul encaixa
+
+Atalhos
+Ctrl + Z= desfazer
+Ctrl + + ou - = zoom
+Segurar techa space = arrastar a imagem através do mouse
+Ctrl + 0 = Ajustar a imagem para que a imagem volte a ocupar de forma adequada de acordo do tamanho de tabela
+C = Cortar imagem
+Ctrl + D = Cancela uma seleção
+Ctrl + Shift + I = Inverte Seleção
+] = aumenta o pincel 
+[ = diminui o pincel
+
+
+SELEÇÃO 
+Nunca deixe a camada com o cadeado. Tire esse cadeado e tranforme em camada
+
+SELEÇÃO DE LETREIROS
+2 ferramenta
+Existe: 
+Retangular: Só formato Retangular
+Eliptico: Só formato de Circulo
+
+Opções na Barra de Configurações
+1 posição = apenas um seleção
+2 posicão = 2 seleções ou mais
+3 posição = subtrair alguma parte de alguma seleção ja feita
+4 posição = intersecção. Cria uma seleção em cima de uma seleção ja realizada subtraindo tudo oq ficar de fora de ambas as seleções. Muito pouco utilizada
+
+Estilos na Barra de Configurações
+Norma = Voce irá definir manualmente
+Proporção Fixa: Criar quadrados perfeitos, circulos perfeitos...
+Medição Fixa: Você ira definir por números e clicar na tela para criar a seleção exata numericamente
+
+SELEÇÃO DE LAÇOS
+3 posição 
+Existe: 
+Laço = seleção livre. rabiscando a tela manualmente
+Laço Poligonal = seleção através de linhas e pontos.
+Laço Magnético = selção através de cores que fica que nem imã quando você passa pelas beiradas da imagem.
+
+SELEÇÃO RÁPIDAS
+4 posição
+Existe:
+Seleção Rápida = seleciona através de cores. Vai arrastando com o mouse que as cores que forem parecidas ela vai selecionando.
+Varinha Rápida = seleção através de uma cor que você irá definir clicando na imagem. Continue clicando para continuar selecionando até a imagem ficar boa
+Nova Ferramenta = fará uma seleção perfeita do objeto apartir do que estiver dentro de uma seleção que você irá fazer (pode ser quadrada ou manualmente mesmo)
+
+
+Opções Barra de Configurações (clicar na setinha para baixo)
+Tamanho 
+Rigidez
+Espaçamento
+
+Opções Barra de Configurções Varinha Rápida
+Tolerância
+Quanto Maior = aumenta o número de cores parecido com aquele tom. Abrange
+Quanto Menor = diminuir o número de cores parecido com aquele tom. Restringi
+
+Obs: Desmarque a opção "Adjac"
+
+Apagar Imperfeições nos Arredores da Imagem 
+selecionar camada -> 4 ferramenta de seleção  Varinha Rápida -> selecionar o que tem fora -> Guia Selecionar - Modificar -> Expansão -> 2 pixels -> Ok -> Delete -> Ctrl + D
+
+
+SELEÇÃO DE INTERVALO DE CORES
+Guia Selecionar -> Intervalo de cores -> Deixar marcado  "Amostras de Cores" > Há 3 conta gotas - selecionar o 1 conta gota - dê um clique na cor que deseja dentro da imagem - vai aumentando ou diminuindo o Grau de Seleção -> 
+
+Obs: Grau de Seleção como 200 não é recomendado. O ideal é adicionar mais cores através do 2 conta gota. Caso delete uma cor selecionada use o 3 conta gota.
+Obs: Evite pontos cinzas na imagem da janela. 
+
+Mudar a cor através da Seleção de intervalo de cores e Matriz Saturação.
+Selecionar o maximo possivel de cores  para seleção de intervalo -> clicar no 1 icone da esquerda na prateleira do meio da janela de Ajustes ( ao lado tem a janela estilos e esta em cima das camadas) -> Altere a cor que vc selecionou anteriormente através da Matriz
+
+SELEÇÃO DE MÁSCARA RÁPIDA
+É  a penúltima ferramenta do Photoshop (um quadrado com uma bola no meio) ->antes de selecionada voce precisa clicar na ferramenta pincel e registre se que as 2 cores registradas nas ferramentas (acima dela) esteja preto e branco: 
+Preto = Você preenche toda a imagem ou lugares que nao deseja aparecer na seleção
+Branco = voce seleciona atraves do pincel uma seleção 
+
+clique no penultimo ferramenta -> vai mostrar a seleçaõ
+
+Ferramenta Mascara Ferramenta (penultima ferramenta)
+permite voce ver os defeitos ou se esta perfeito uma seleçao 
+fazer uma seleção -> clicar na penultima ferramenta -> oq estiver em vermelho é  a seleção -> desmarcala e continuar fazendo a seleçao na imagem ou esta perfeita mesmo
+
+
+SELEÇÃO DE ÁREA DE FOCO
+Guia Selecionar -> Area de Foco -> Janela = Intervalo de Foco: 
+quanto maior = seleciona mais areas da imagem
+quanto menor = seleciona menos areas da imagem
+
+Janela: ao lado esquerdo tem os pinceis que aumentam ou diminuir a seleçao atraves no nosso manuseamento na imagem
+
+Janela = definir como seleção la embaixo
+
+AS MELHORES FERRAMENTAS DE SELEÇÃO 
+Guia Selecionar = Área de Foco
+4 ferramenta = Seleção de objeto através de um quadrado ou circulo integrando a área que deseja selecionar 
+4 Ferramenta = Seleção Rápida
+
+Transferir um projeto para outro projeto
+1 ferramenta acionada -> selecionar na imagem -> arrasta-la até lá em cima aonde esta o nome do projeto -> vai aparecer o projeto que desejamos -> só largar
+
+OU 
+
+CTRL + A, CTRL + C e na camada que desejamos despejar CTRL + V
+
+DIMINUIR DE FORMA PROPORCIONAL
+1 ferramenta -> acionar a caixinha de "Mostrar Contr. Transf." -> sempre aumentar ou diminuir atraves das arestas nas pontas e pressionando o Shift 
+
+Posicionar o Objeto Atrás De Um Outro Objeto 
+primeiro tem que colocar a imagem que ficará sobreposta no lugar correto -> ocultar a camada dela -> deixar visivel apenas a camada que ficará embaixo -> selecionar através da ferramenta de seleção o objeto por inteiro que ficará embaixo -> deixar visivel a camada do objeto que ficará sobreposto e selecionar a camada dela -> clicar no delete -> CTRL + D 
+
+GUIA SELECIONAR
+CTRL + A 
+CTRL + D
+CTRL + SHIFT + I
+Assunto = Mais uma ferramenta de seleção rápida e inteligente
+Modificar:
+Borda = abrirá uma janela e vc pode colocar um numero. Irá ser criardo uma borda de seleção dentro da seleçaõ
+Suavização = arredonda as arestas do objeto 
+Expandir = espande a area de objeto 
+Contração = diminui  area de objeto 
+Difusão = arredonda a aresta e deixa a cor desfocada e perfumada que nem bloch de maquiagem
+
+Aumentar = aumentar a seleçao
+Semelhante = voce clica em alguma cor na imagem e ele seleciona tudo que for proximo ou parecido naquela imagem
+Transformar Seleção = expande ou diminui a seleção manualmente através das aresta e nos pressionando o shift
+Editar Seleção Rápida = tem a mesma função do penultimo ferramenta. Oq estiver em vermelho não esta selecionado e o que estiver na cor real esta selecionado

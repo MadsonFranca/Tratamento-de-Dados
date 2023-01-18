@@ -1,0 +1,90 @@
+Fórmula com referência de célula de outra guia
+antes de digitar a célula (Ex: D4) deve-se colocar o nome da guia e ! (Ex: Cálculo!D4)
+
+Mudar a célula sem perder a referência 
+Com o mouse você vai focar em uma das quatro laterais da célula e quando o mouse virar uma cruz você arrasta a célula para o local desejado. 
+
+Preenchimento Automático Padrão
+Digitar 1 fazer uma cruz no mouse e aperta o ctrl 
+
+Fazer minha própria lista de Preenchimento Automático 
+Guia Arquivo - Opções = Avançado - Editar Lista Personalizada - Adicionar = Escrever a lista separando com vírgula = OK 
+
+Diferente no Excel 
+Usar o símbolo "<>"
+ Atalho ALT + SETA PARA BAIXO
+Cria uma lista suspensa numa tabela
+
+Explorar o Filtro Avançado
+Guia Dados
+Copiar cabeçario da Tabela 
+Aplicar Filtro 
+Aparecer Filtros da Tabela Logo Após
+
+Explorar o Classificar Avançado 
+Guia Dados 
+Fazer em uma Base de Dados ou uma Tabela 
+
+Congelar Painéis 
+Congelar a partir de cima de uma celula selecionada 
+
+Proteger Planilha 
+Guia Revisão 
+Proteger Planilha (Edição) é diferente de Proteger Pasta de Trabalho (Estrutural)
+Proteger Planilha pode marcar e desmarcar opções 
+Proteger e Compartilhar Pasta de Trabalho
+Permitir que os usuários editem intervalos (Importante)
+Selecionar o icone na Guia Revisão ou selecionar uma imagem, comentário... clicar com o mouse direito > Formatar Imagem > Propriedades (caixinha com dimensões)/ Proteção > Desmarcar Bloqueado 
+Controlar Alterações
+
+PROCV 
+Coluna
+PROCH
+Linha
+
+FORMULA MATRICIAL 
+Em vez de Enter apos o final da formula vc digita ctrl shift enter 
+
+Edição da Tabela numa Tabela Dinamica
+Guia Analisar Especial > Atualizar
+
+Filtro Tabela Dinâmica
+Clicar na setinha preta para baixo num campo dinamico >Aplicar Filtros
+
+ATINGIR META
+Guia Dados > Teste de Hipóteses > Atingir Metas
+Janela Atingir Meta > 
+Definir Célula: (Célula da Meta) 
+Para valor: (Meta que você irá decidir) 
+Alternando célula: ( a célula modificavel para atingir a meta)
+
+Tabela de Dados
+2 variaves para ser simulado 
+Criar uma tabela 
+Prencher a primeira coluna (1 celula vazia) e a primeira linha também (1 célula vazia) a célula vazia põe a fórmula 
+Selecionar a tabela > Guia Dados > Teste de Hipóteses > Tabela de Dados 
+Janela Tabela de Dados
+2 Entradas
+
+Solver
+Guia Arquivo > Opções > Suplementos > Opção lá embaixo > Assinalar o Solver > Ok
+Guia Dados > Solver 
+
+Macros
+Habilite a Macro no Excel > Guia Arquivo > Opções > Personalizar Faixa de Opções > Check Guia Desenvolvedor > Aplicar 
+Guia Desenvolvedor > Gravar Macro > Preencher > OK > Parar Gravação > Macros > Selecionar a Macro > Aplicar 
+Criar Objetos e colocar o macros atraves de link com o botão direiro selecionar macros e selecionar a macro apos a janela e ok 
+
+Referência Relativa de Macros
+Guia Desenvolvimento > Referencia Relativa de Macros > Gravar Macros > escrever > Parar de Gravar Macros > Fazer o Botão e atribuir Macros > selecionar macro e ok > clicar em outra celula e clicar no botao de macro 
+
+
+Gravar Macros  com Referência Relativa
+
+Impressão 
+Guia Layout > explore as opções 
+Imprimir o conteúdo inteiro > guia arquivo > imprimir > ultima opção > ajustar todas colunas 
+
+Agrupar 
+Guia Dados > Agrupar 
+Selecione uma linha ou coluna e aperte o comado agrupar 

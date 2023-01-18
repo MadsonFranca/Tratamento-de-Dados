@@ -1,0 +1,240 @@
+Extensão do Acces 
+.accdb
+
+ESC
+ESC para desfazer quando estiver editando um texto na célula
+
+F2
+Para chegar até o final da célula e editar/acrescentar
+
+Campos 
+São as colunas da tabela
+
+Registro 
+São as linhas com os dados inseridos 
+
+Tipo de Dados 
+Objeto OLE 
+Imagem 
+
+Calculado 
+Fórmulas na Tabela
+
+Assistente de Pesquisa
+Lista
+
+Fórmulas em Coluna
+Calculado -> Ex: [Unitário]*[Quantidade] ou Clicar no nome da tabela e ir apertando nas colunas e colocar o operador entre as tabelas 
+
+Retirar Chave Primária
+Botão direito no começo da linha(quadrado azul) -> Acionar ou Retirar Chave com um click 
+
+
+OBS: Sempre salvar na mudança entre a folha e modo design
+
+
+
+Filtrar Avançado
+Guia pagina inicial -> grupo filtro -> avançado -> filtrar formulário
+
+SHIFT + ENTER
+finalizar a edições em um registo e salvar
+
+F7
+abrir a janela de ortografia 
+
+CTRL + U
+janela de substituir 
+
+Propriedades
+
+Novos Valores: Incremento(1, 2, 3...) e Aleatorio(5,135, -3..)
+Tamanho do Campo: defini a quantidade de caracteres 
+Formato: defini a formatação do número. Ex: R$, U$$ , 
+Casas Decimais: Automatico(2) e outras opções (1, 2, 3, 4 casas decimais..)
+Legenda: novo tit ulo que aparecerá no modo exibição e não no Modo Design 
+
+Obs: Na área de Design de prefência o nome de campo tem que estar em apenas uma palavra. Caso seja necessário o uso de mais um nome é preciso que seja separado por "_" por causa do VBA.
+
+Valor Padrão: última linha que está preste a ser prenchida pode estar rótulada com algum texto que tem que esta entre "" para facilitar seu preenchimento
+
+Obs: Preencher o Valor do Padrão com a data de hoje: clicar no valor padrão -> clicar no 3 pontinhos no final da linha -> Campo Funções -> Funções Internas -> Campo ao lado -> Data/Hora -> Data -> Será criado la na caixa a cima "Data()" -> ok
+
+Regra de Validação: defini regras para o preenchimento de dados em determinado coluna. Ex: Coluna Salário -> Valores abaixo ou igual 0 não são permitido "=>0" -> aparecerá uma caixa de mensagem caso seja digitado isso
+
+Regra de Validação: clicar no campo -> 3 pontinhos -> escrever no campo. Ex: "MASCULINO" Ou(é uma fórmula) "FEMININO"
+
+Texto de Validação: o que aparecerá na janela quando algo estiver errado quando for inserido algo no campo. Texto que esta escrito na pop up. 
+
+
+Requerido: Colunas que serão obrigatórios o preenchimento de linhas. Sim = Obrigatório Não = Não é obrigatório 
+
+Indexado: evita duplicação de dados que não existe duplicidade. Ex: CPF só existe um para cada pessoa 
+
+Alinhamento: deixar os dados da coluna centralizado, esquerda, direita ...
+
+--------------------------------------------
+
+Máscara de entrada: formatação de dados de números que contém hifen, separação com alguma tecla especial. Ex: CNPJ, CPF, CEP, 
+
+Clicar campo Máscara de Entrada -> 3 pontinhos -> caixa com opções  -> avançar -> avançar - assinalar o campo: Com os simbolos ... -> concluir
+
+-----------------------------------------
+
+Aba pesquisa: Exibir controle: 3 opções (Caixa de Texto, Caixa de Listagem, Caixa de Combinação)
+
+Caixa de Combinação: Será realizado uma lista através da sua digitação ou se referindo a uma coluna de uma outra tabela 
+
+Exibir Controle: Caixa de Combinação
+Tipo de Origem: Lista de Valores
+Origem da Linha: Você irá a lista
+
+Obs: Nomes entre " " e sepando nomes com ;
+        Botão direito - zoom - caixa maior para digitação
+-------------------------------------------
+
+Teclas de Atalho 
+
+INSERT
+Adicionar uma linha no Mod o Design (a linha como um todo precisa estar selecionada)
+DELETE
+Deletar linha no Modo Design
+
+--------------------------------------------------
+Relações entre Tabelas
+
+Após a criação das tabelas -> Guia Ferramenta de Banco de Dados -> Relações -> Fazer ligaçõe através do arrastamento da seta
+
+Incluir Tabela 
+Guia Design já acionada -> Mostrar Tabela -> Clicar, selecionar, ok 
+
+Sair da Tela de Relações
+Salvar -> X entre as opções nos grupos da Guia Design 
+
+Ocultar Tabela na Relações
+Clicar no Campo da Tabela -> Clicar Ocultar Tabela na Guia Design
+
+Mostrar Tabela Ocultada 
+Guia Design -> Mostrar Tabela -> Clicar em todas - Adicionar 
+
+Caixa de Diálogo de Editar Relações 
+Duplo clique no meio da setinha que liga as tabelas para acionar a caixa
+
+Criar ligações entre as tabelas
+Clique e pressione o nome da coluna e arraste para outro de nome de tabela de outra tabela para fazer a ligação -> gera uma caixa -> Ok 
+
+ Integridade Referencial 
+Apagar um dado determinado tabela irá apagar o registro de todas as outras tabelas também
+Relações -> Duplo clique no centro da seta -> Acionar o botão Impor Integridade Referencial
+
+Relatório de Relações de Tabelas
+Desenho de Relações da Tabela para impressão e editar esse desenho 
+
+Design de Relatórios 
+Sair daquela parte de impressão, paisagem ... através da x e irá para uma pagina que irá permitir a mudança do título, manuseio da tabela para colocar do jeito que desejar 
+
+Fechar Relatório
+X lá no canto da tabela
+--------------------------------------------------
+CONSULTAS
+
+Relações de Tabela
+Para fazer ligações entre as tabelas fique atento para ligar campos que façam sentidos.
+Ex: Vendedor com Vendedor(vai puxar ou armazenar dados nesta tabela relacionada)
+
+Fazer Caixa de Combinação de Outra Forma 
+Pesquisa -> Sequencia de Preenchimento =
+- Exibir Controle: Caixa de Combinação
+- Tipo de Origem de Linha: Tabela/Consulta
+- Origem da Linha: Caixa que você irá preencher -> Três pontinhos -> Arrastar nome da tabela desejada para o primeiro campo chamado campo
+
+Tabela Filtrada ou Tabela de Consulta
+Guia Criar -> Assistene de Consulta -> Assistente de Consulta Simples -> Clicar e arrastar as colunas que você desejar ver -> Resumo -> Opções de Resumo -> Definir: Soma, Média... -> Definir o nome da tabela -> Marcar a opção: Abrir a consulta para visualizar informações.
+
+Assistente de consulta da tabela de referência cruzada
+Montar uma tabela a partir das linhas e colunas. Tudo definido pela pessoa
+
+Guia Criar -> Assistente de Consulta -> Assistente de consulta da tabela de referência cruzada -> Definição das linhas -> Definição da Coluna -> Definição da coluna que irá aparecer em todas na linha no meio e você deve decidir o que serão esses números. Ex: Soma, Média ... -> Definir nome da tabela -> Exibir a Consulta.
+
+Assistente de consulta localizar duplicatas 
+Vai procurar registros duplicados através de colunas. Caso todas as colunas selecionadas  tiveram com 2 registros ele mostrará nesta tabela de consulta
+
+Guia Criar -> Assistente de Consulta -> Assistente de consulta localizar duplicatas -> Escolher tabela -> Escolher Coluna -> Avançar -> Definir Nome da Tabela -> Exibir Consulta.
+
+Assistente de consulta localizar não coincidente
+Irá procurar algo que não tem em comparação de duas colunas de duas tabelas. Ex: Um vendedor cadastrado na Tabela Vendedores irá fazer uma comparação com Tabela Vendas para ver se ele vendeu algo. Caso ele não tenha vendido ele não aparecerá na outra tabela.
+
+Guia Criar -> Assistente de Consulta -> 
+Assistente de consulta localizar não coincidente -> Definir Tabela  -> Definir Coluna -> Coincidir com uma coluna de outra tabela -> Definir colunas que irão aparecer na consulta -> Definir o nome da tabela de consulta
+
+-----------------------------------------------------------------
+
+Design da Consulta 
+Consulta do Zero a partir do Design -> Definir as tabelas que serão selecionadas -> arrastar Código até o campo lá embaixo -> Salvar - Executar (Ponto de Interrogação lá em cima) -> 
+
+Obs: Cada Campo lá embaixo tem uma coluna, cada coluna pode ser preenchida arrastando os campos lá em cima aqui para baixo. Cada campo é uma coluna que aparecerá la na Consulta como uma coluna
+
+Obs: Na 3 opção (Mostrar) dos campos tem a opçao de Crescente e Descrecentes
+Obs: No Campo Critério (5 opção) você pode colocar algum Critério. Ex: <100 na coluna valor 
+
+Obs: Critério em Data deve ser colocado entre Hashatag. Ex: =#01/05/2022# E <= #31/05/2022#
+
+Caixa de Inserir Dados em Tabelas de Consulta
+Modo Design -> ir até critérios na 5 linha - digitar entre colchetes o filtro que a pessoa devera digitar exemplo -> [Nome do Estado] ->  Salvar - Executar - Aparecerá logo de cara uma caixa de insessão de dados para fazer o filtro 
+
+Agrupar/colocar o totais 
+Modo Design -> Totais (lá em cima com simbolo parecido com um Z) -> Campo de total lá embaixo focar na 3 linha -> mudar para soma, media .. - salvar - executar 
+
+
+Criar uma Tabela Através do Resultado de uma Consulta 
+Guia  Criar -> Design de Consulta -> Mostrar Tabela -> Seleciona tabela vendas -> Selecionar as colunas e realoca-las nos campos la embaixo -> Definir um Critério: -> Definir o nome da tabela de consulta -> Salvar ->  Executar -> Será mostrada a tabela - Guia Criar -> Criar Tabela -> Definir Nome da Tabela - Ok 
+
+Acrescentar Dados De Uma Tabela Para Outra
+Guia Criar -> Consulta Design -> Selecionar tabela -> Icone Acrescentar lá em cima -> Ok -> Arrasta as colunas desejadas -> Nota-se que no campo acrescentar no mesmo nome da coluna - Salvar - Nome da Tabela - Executar 
+
+
+Atualizar uma Tabela Já Existente Modificando os Dados Já Inseridos Através da Consulta Atualizar 
+Guia Criar -> Design da Consulta -> Selecionar Tabela -> Arrastar Coluna para o Campo -> Definir novos Critérios -> Executar -> Ver tabela -> Muda para a tela Design -> Icone Atualizar -> Campo Atualizar para: 3 linha defini um novo criterio -> Salvar -> Criar nome da tabela de Consulta -> Executar 
+
+----
+
+Consulta Refencia Cruzada no modo Consuta Design
+Guia Criar -> Design Consulta -> Definir Tabela -> Arrastar as colunas para os campos -> Icone Tabela de Referencia Cruzada -> Obs: Coluna com valores devem fazer alguma operação aritmética e ficar agrupado por -> 4 linha Referencia Cruzada você irá definir quem irá ser a linha, os titulos da coluna, valor.. - salvar -> Definir nome da tabela de consulta -> Executar 
+
+Excluir Registros em Tabelas de Consulta
+Guia Criar - Desing de Consulta -> Selecionar Tabela -> Arrastar o campo que possua o critério que você deseja apagar em algum registro -> Digitar no critério o que você deseja -> Salvar -> Definir o Nome da Tabela -> Icone Excluir -> Salvar -> Exercutar 
+
+Consulta Avançada
+
+Guia Cria -> Design da Consulta -> Escolher a tabela -> Botão direita no 1 campo lá embaixo -> Construtor -> Funções -> Funções Internas -> Tudo -> Dê dois cliques no contador/cont -> selecionar com o mouse o nome que está entre colchetes -> Consultas ACB - Tabela -> Nome da Tabela -> clicar no nome da tabela -> 2 clique no nome da tabela 2 coluna - texto antes de entrar na formula pode apagar e colocar um novo para o titulo da coluna 
+
+
+-------------------------------------------------------------
+RELATÓRIOS
+caixa que dará um vizual foda para inserir dados
+
+Guia Criar -> Assistente de Formulário -> Janela criada para definir qual tabela e campos (todos) será criado o formulário -> Definir se será por layout tabela (legal), folha de dados, coluna (a melhor), Justificado (legal tbm) -> Abrir o formulário ...
+
+OBS: para voltar o botão anterior vc tem que ir lá embaixo onde fica o zoom -> pode avançar ou retroceder 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
