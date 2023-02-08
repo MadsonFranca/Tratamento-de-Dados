@@ -1,0 +1,66 @@
+TRATAMENTOS DE DADOS
+- Formate os dados e Transforme em Tabela
+- Defina os dados principais 
+- Transforme em Tabela Dinâmica
+
+
+
+
+
+DASHBOARD
+
+- Diminuir o Zoom para 70%
+- Plano de Fundo
+Alt: 22,73 Larg: 40,54
+- Painel Lateral
+Alt: 21,57 Larg: 5,7
+- Blocos Informativos (Acima)
+Alt: 2,97 Larg: 7,91
+- Blocos Gráficos (Abaixo)
+Alt: 8,52 Larg: 17,27
+
+- 93% Dash Finalizado
+
+
+Dashboard Maior
+Largura = 19,66
+Comprimento = 36,8
+
+Dashboard abaixo blocos (Titulo)
+Largura = 7,76
+Comprimento = 39,88
+
+Blocos de Titulos
+2,73
+7,32
+
+Titulos Blocos
+0,77
+6,23
+
+Icones 
+1,55
+1,51
+
+Dashboard Bloco Gráfico Maior
+8,21
+26,21
+
+Dashboard Bloco Gráfico Menor
+8,21
+12,61
+
+Titulo Grafico Maior
+1
+25,73
+
+Titulo Gráfico Menor
+1,06
+12,33
+
+Fonte unica = Montserrat
+              Calibri
+              Tahoma
+              Verdana
+              Helvetica
+              Arial
